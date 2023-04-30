@@ -1,8 +1,8 @@
 const express = require("express");
 const app = express();
-const func = require("./algorithms/filter_list.js");
+const func = require("./algorithms/findNextSquare.js");
 
-const result = func.filter_list([1, "a", "b", 0, 15]);
+const result = func.findNextSquare(121);
 console.log({ result });
 const port = 3000;
 app.listen(port, () => {
